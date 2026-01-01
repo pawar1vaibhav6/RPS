@@ -1,3 +1,10 @@
+import random
+
+def rps_input(rps_list):
+    c1 = input("Rock,Paper,Scissors :").capitalize()
+    c2 = random.choice(rps_list)
+    return c1,c2
+
 def rps(p1, p2):
     if p1==p2:
         return "Draw!"
